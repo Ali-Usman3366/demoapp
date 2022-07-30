@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Bhaijaan 2', cursive;
+
+}
+
+body{
+    background: lightgray
+}
+.navbar{
+  width: 100%;
+  z-index: 1;
+}
+ .nav-bg{
+    background: #fff; 
+background: linear-gradient(to top, #0F2027 20% , #254858 100% );
+
+}
+
+.navbar-brand{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav-link{
+    color:white;
+    font-size: 1rem ;
+    transition: all 0.5 ease;
+} 
+.nav-link:hover{
+  border-bottom: 2px solid white;
+}
+.carousel-item{
+  height: 600px;
+  margin-top: 20px;
+}
+  
+  /* footer */
+
+
+  .containerjack{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+    padding-bottom: 10px;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.containerjack .an{
+    height: 100px;
+    width: 100px;
+    background-color: #f5f6fa;margin: 10px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 1px 4px 2px 2px #dcdde1;
+    line-height: 110px;
+    position: relative;
+    overflow: hidden;
+}
+.fa-facebook-f{
+    color: #273c75;
+}
+.fa-twitter{
+    color: #00a8ff;
+}
+.fa-instagram{
+    color: #e84393 ;
+}
+.fa-youtube{
+    color: #e84118;
+}
+
+.containerjack  .an i{
+    transition: all 0.3s linear;
+
+}
+.containerjack .an:hover .fab{
+transform: scale(1.5);
+color: #fff;
+}
+.containerjack .an:before{
+content: "";
+height: 120%;
+width: 120%;
+position: absolute;
+left: -50%;
+top: 90%;
+transform: rotate(60deg);
+background-color: #00a8ff;
+}
+.containerjack .an:hover::before{
+animation: movecol 0.8s 1;
+animation-fill-mode: forwards;
+}
+
+@keyframes movecol {
+0%{ left: -50%;    top: 90%; }
+50%{left: -10%;    top: -60%;  }
+100%{left: -10%;    top: -10%;  }
+}
+ .folo{
+   text-align: center;
+
+}
+.sbox{
+  position: relative;
+}
+.stext{
+  width: 0px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  /* padding: 6px 10px; */
+  transition: all 0.2s linear;
+}
+.sbtn{
+  color:linear-gradient(to right, #2C5364, #203A43, #0F2027);  
+  font-size: 20px;
+  height: 35px;
+  width: 35px;
+  border: none;
+  background: white; 
+  border-radius: 50%;
+  position: absolute;
+  right: 7px;
+  top: -6px;
+  padding: 7px 5px;
+  margin-bottom: 5px;
+}
+.sbox:hover > .stext{
+  width: 250px;
+  padding: 6px 10px;
+}
+.sbox:hover > .sbtn{
+  color: navy;
+  background-color: white;
+  position: absolute;
+  top: 1px;
+  right: 7px;
+}
+.imgh{
+  height: 550px;
+}
+
+.form{
+  background: rgba(0, 0, 0, 0.6);
+  width:100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.form-content{
+  height: 95vh;
+  width: 98%;
+  background: transparent  ;
+  /* padding: 20px; */
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+}
+.form-img{
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: -9px;
+  right: -9px;
+  background: cyan;
+  filter: invert(100%);
+  border-radius: 50%;
+  box-shadow: 6px 6px 29px -4px rgb(250, 247, 247);
+  cursor: pointer;
+}
+.slide{
+  max-height: 80vh;
+}
+.sm_search input{
+  border-radius: 15px;
+  padding: 5px 5px 5px 5px;
+ border: none;
+ outline: none;
+ height: 40px;
+ margin-right: 20px;
+}
+.sm_search button{
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: rgb(3, 116, 192);
+  position: absolute;
+  left: 160px;
+  bottom: 10px;
+}
+.card{
+  width: 15rem;
+  border: none;
+  border-radius: 30px 0 30px 0;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.card-img-top{
+  height: 270px;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+}
+.card:hover >.card-img-top{
+  transform: scale(1.03);
+}
+.footer_float{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.root{
+  display: flex;
+  flex-direction: column;
+}
+.card:hover{
+  transform: scale(1.03,1.03);
+box-shadow: 0px 0px 30px 3px #0d6d96;
+
+}
+.card-body{
+  padding: 0;
+  background: linear-gradient(to bottom, #2C5364 30%, #203A43 60%, #0F2027 100%);
+  border-radius: 0 0 30px 0;
+
+}
+.card_btn{
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
+
+}
+.card_btn a{
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s ease-in-out;
+
+}
+.card_btn:hover{
+  background-color: #bddfff;
+  border: none;
+}
+.card_btn:hover a{
+  color: black;
+
+}
+.movies{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
